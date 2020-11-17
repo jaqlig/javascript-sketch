@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Etch A Sketch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&family=Zilla+Slab:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body ondragstart="return false;" ondrop="return false;">
+
+    <h1>Etch A Sketch!</h1>
+
+    <div class="prefs">
+        <input id="color" type="text" placeholder="Type color, (e.g. red or #FF6F61)">
+        <button id="clear">Clear all</button>
+        <span id="info"></span>
+        <form>
+            <input id="size" type="number" placeholder="Grid size" min="16" max="128" required>
+            <input type="button" id="createGrid" value="New board">
+        </form>
+    </div>
+
+
+    <div id="container" >
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
